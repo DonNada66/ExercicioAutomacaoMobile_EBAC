@@ -8,7 +8,7 @@ describe('Funcionalidade: Login e Cadastro (Sign Up)', () => {
     });
 
     it('Deve realizar cadastro (Sign Up) com sucesso', async () => {
-        await loginPage.signUp('aluno.wdio@teste.com', 'Senha@1234');
+        await loginPage.signUp('gabrieldonada@ebac.com', 'Senha@1234');
 
         await expect(menuPage.alertTitle).toHaveText('Signed Up!');
         await expect(menuPage.alertMessage).toHaveText('You successfully signed up!');
@@ -16,7 +16,7 @@ describe('Funcionalidade: Login e Cadastro (Sign Up)', () => {
     });
 
     it('Deve realizar login com credenciais válidas', async () => {
-        await loginPage.login('aluno.wdio@teste.com', 'Senha@1234');
+        await loginPage.login('gabrieldonada@ebac.com', 'Senha@1234');
 
         await expect(menuPage.alertTitle).toHaveText('Success');
         await expect(menuPage.alertMessage).toHaveText('You are logged in!');

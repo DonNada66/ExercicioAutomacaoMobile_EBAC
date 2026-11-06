@@ -8,8 +8,8 @@ describe('Funcionalidade: Formulários (Forms)', () => {
         await expect(formsPage.screenTitle).toBeDisplayed();
 
         // 1. Preenchimento do campo de texto e validação do resultado espelhado
-        await formsPage.fillInputField('Automação Mobile WDIO');
-        await expect(formsPage.inputTextResult).toHaveText('Automação Mobile WDIO');
+        await formsPage.fillInputField('Automação Mobile WDIO EBAC');
+        await expect(formsPage.inputTextResult).toHaveText('Automação Mobile WDIO EBAC');
 
         // 2. Alternância do Switch e validação do texto de estado
         await expect(formsPage.switchText).toHaveText('Click to turn the switch ON');
